@@ -1,0 +1,19 @@
+Step 1: Open Windows Firewall
+- Control Panel → System and Security → Windows Defender Firewall  
+- Click "Advanced settings" on the left.
+
+
+Step 2: View Current Rules
+- Selected "Inbound Rules" to see existing rules.
+
+
+Step 3: Add Rule to Block Telnet (Port 23)
+1. Click "New Rule" (right panel)
+2. Select **Port** → Next
+3. TCP → Specific local ports: `23` → Next
+4. Choose **Block the connection** → Next
+5. Apply to Domain, Private, and Public → Next
+6. Name: `Block Telnet Port 23` → Finish
+
+Step 4: Enable Telnet for Testing
+telnet localhost 23
