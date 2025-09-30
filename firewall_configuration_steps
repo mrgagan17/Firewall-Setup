@@ -17,3 +17,14 @@ Step 3: Add Rule to Block Telnet (Port 23)
 
 Step 4: Enable Telnet for Testing
 telnet localhost 23
+
+
+Step 5: Add Rule to Allow SSH (Port 22)
+-New Rule → Port → TCP → 22
+-Choose Allow the connection
+-Apply to Domain, Private, and Public
+-Name: Allow SSH Port 22
+
+
+Step 6: Remove Telnet Block Rule
+-Go back to Inbound Rules → Right-click the Telnet rule → Delete
